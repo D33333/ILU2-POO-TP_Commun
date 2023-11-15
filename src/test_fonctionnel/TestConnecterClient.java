@@ -24,7 +24,7 @@ public class TestConnecterClient {
 		int numClient = boundaryConnecterClient.connecterClient();
 
 		System.out.println("\n\n---------- CONTROLE DES DONNEES ----------");
-		System.out.println("CrÈation du client n∞" + numClient);
+		System.out.println("Cr√©ation du client n√©" + numClient);
 		System.out.println(carnetClientele);
 	}
 }
