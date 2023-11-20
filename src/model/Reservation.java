@@ -11,6 +11,6 @@ public abstract class Reservation {
 	
 	@Override
 	public String toString() {
-		return "Le "+jour+"/"+mois+" : ";
+		return "Le "+jour+"/"+mois+"\n";
 	}
 }

@@ -12,8 +12,8 @@ public class ReservationRestaurant extends Reservation {
 	
 	@Override
 	public String toString() {
-		StringBuilder msg = new StringBuilder(super.toString()+"table n°"+numeroTableRes+" pour le ");
-		if (numeroService == 0) {
+		StringBuilder msg = new StringBuilder(super.toString()+"Table "+numeroTableRes+" pour le ");
+		if (numeroService == 1) {
 			msg.append("premier service.");
 		} else {
 			msg.append("deuxième service.");
