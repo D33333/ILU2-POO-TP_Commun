@@ -18,11 +18,11 @@ public abstract class Formulaire {
 		return mois;
 	}
 
-	public int getIdentificationEntite() {
+	public int getNumeroEntite() {
 		return numeroEntite;
 	}
 
-	public void setIdentificationEntite(int numeroEntite) {
+	public void setNumeroEntite(int numeroEntite) {
 		this.numeroEntite = numeroEntite;
 	}
 }
