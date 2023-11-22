@@ -5,7 +5,7 @@ public class Restaurant {
 	private CentraleReservation<FormulaireRestaurant,EntiteReservable<FormulaireRestaurant>>  centrale;
 	
 	public Restaurant() {
-		this.centrale = new CentraleReservation<FormulaireRestaurant,EntiteReservable<FormulaireRestaurant>>(new Restaurant[] {});
+		this.centrale = new CentraleReservation<FormulaireRestaurant,EntiteReservable<FormulaireRestaurant>>(new Table[500]);
 	}
 	
 	private class Table extends EntiteReservable<FormulaireRestaurant> {
@@ -53,6 +53,7 @@ public class Restaurant {
 	public void ajouterTable(int nbChaises) {
 		Table table = new Table(nbChaises);
 		int numero = centrale.ajouterEntite(table);
+		table.setNumero(numero);
 	}
 	
 	public int[] donnerPossibilites(FormulaireRestaurant formulaire) {

@@ -4,6 +4,10 @@ public abstract class EntiteReservable <F extends Formulaire> {
 	protected CalendrierAnnuel calendrier;
 	private int numero;
 	
+	public EntiteReservable() {
+		calendrier = new CalendrierAnnuel();
+	}
+	
 	public int getNumero() {
 		return numero;
 	}

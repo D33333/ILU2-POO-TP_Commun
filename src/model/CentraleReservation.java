@@ -19,7 +19,7 @@ public class CentraleReservation <T extends Formulaire, E extends EntiteReservab
 		int[] possibilites = new int[nbEntites];
 		for (int i = 0; i < nbEntites; i++) {
 			E entite = entites[i];
-			if (entite.estLibre(formulaire)) {
+			if (entite.compatible(formulaire)) {
 				possibilites[i] = entite.getNumero();
 			} else {
 				possibilites[i] = 0;
